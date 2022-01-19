@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-content: center;  
+    height: 100vh;  
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    padding: 20px;
+    width: 270px;
+}
+
+.card-image {
+ /*   background-image: url("../images/image-equilibrium.jpg");*/
+    padding-bottom: 20px;
+    z-index: 1;
+}
+
+.card-image:hover {
+    cursor: pointer;
+    position: absolute;
+    background-image: url("/images/icon-view.svg") no-repeat;
+    background-color: rgba(0,0,0,0.5);
+    top: 25px;
+    left: 25px;
+    z-index: 2;
+}
+
+.card-id {
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 20px;
+}
+
+.card-id:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.card-description {
+    color: hsl(215, 51%, 70%);
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.card-amount {
+    display: flex;
+    flex-direction: column;
+    color: hsl(178, 100%, 50%);
+}
+
+.card-timeleft {
+    display: flex;
+    flex-direction: column;
+    color: hsl(215, 51%, 70%);
+}
+
+.card-separator {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.card-createdby {
+    font-size: 14px;
+    color:hsl(0, 0%, 100%);
+    padding-top: 20px;
+}
+
+.card-createdby, .link {
+    color: hsl(215, 51%, 70%);
+}
+
+.link:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
